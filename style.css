@@ -363,7 +363,7 @@ a {
     min-width: 60%;
     font-size: 1em;
     backdrop-filter: blur(80px);
-    background-color: rgba(238, 160, 255, 0.3); 
+    background-color: rgba(238, 160, 255, 0.1); 
     border-radius: 15px; 
 }
 
