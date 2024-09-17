@@ -310,6 +310,8 @@ a {
 
 /* project */
 .projects a {
+    padding: 35px;
+    padding-left: 0;
     color: var(--prject-font-color);
     text-decoration: none;
 }
@@ -349,18 +351,19 @@ a {
     font-size: 1em;
 }
 
-.project-content .heading {
+/* .project-content .heading {
+    width: 30%;
     cursor: pointer;
-}
+} */
 
 .project-description {
     margin-top: 30px;
     padding: 25px;
-    width: 80%;
+    width: 65%;
     min-width: 60%;
     font-size: 1em;
-    backdrop-filter: blur(100px);
-    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(80px);
+    background-color: rgba(238, 160, 255, 0.3); 
     border-radius: 15px; 
 }
 
@@ -393,8 +396,14 @@ a {
     top: 200px;
 }
 
+.project-container.second a {
+    padding: 35px;
+    padding-right: 0;
+}
+
+
 .project-container.second .project-content {
-    left: 40%;
+    left: 38%;
     min-width: 70%;
     max-width: 100%;
 }
