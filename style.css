@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+@font-face {
+    font-family: 'Signature';
+    src: url('assets/font/TheRichJulliettaDemo-OVZEd.ttf') format('woff2');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --header-color:#1A0B2E;
+    --main-color: #11071F;
+    --font-size: 20px;
+    --header-font: 'Plus Jakarta Sans';
+    --main-font: 'Preahvihear';
+    --project-font: 'Poppins';
+    --special-font: 'Signature';
+    --special-font-color: #7127BA;
+    --project-font-color: #CCD6F6;
+    --project-background-color: #2B0B3A;
+}
+
+/* MOBILE */
+.mobile-alert {
+    display: none;
+    position: relative;
+    background-color: var(--main-color);
+    text-align: center;
+    min-width: 20%;
+    width: 100%;
+    height: 200vh;
+    overflow: hidden;
+}
+
+.mobile-alert .heading {
+    display: block;
+    position: fixed;
+    margin: 0 20vw;
+    margin-top: 40vh;
+    max-width: 80%;
+    color: var(--special-font-color);
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        display: none;
+    }
+
+    .mobile-alert {
+        display: block; 
+    }
+}
+
+/* Mobile */
+
+html {
+    color: #fff;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-width: 750px;
+}
+
+h1, h3, p, span {
+    font-weight: 100;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: 400vh;
+    background-color: var(--main-color);
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-top: 5vh;
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+.header {
+    color: #fff;
+    font-family: var(--header-font);
+    background-color: var(--header-color);
+    height: 5rem;
+    min-height: 100px;
+}
+
+.header .align {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+}
+
+.align .name {
+    width: 40%;
+    height: 100%;
+    font-size: calc(var(--font-size) * 2.5);
+    font-weight: 500;
+    font-family: var(--special-font);
+    letter-spacing: 5px;
+    background: linear-gradient(to right,#600eda, #ea0441);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.align .navbar {
+    justify-content: space-evenly;
+    width: 40%;
+    font-size: cal(var(--font-size) - 10px);
+}
+
+.nav-items a{
+    color: #fff;
+}
+
+.nav-items:hover {
+    color: #ea0ddf;
+}
+
+.align .navbar, .align .name {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.credit {
+    position: absolute;
+    display: inline-block;
+    margin: 10px;
+    margin-left: 20px;
+    color: #757474;
+    font-size: calc(var(--font-size) / 2);
+    font-style: italic;
+}
+
+.section:not(.introduction) {
+    margin-top: 100px;
+    min-width: 30%;
+}
+
+
+.introduction {
+    position: relative;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+
+.ellipse {
+    width: 10em;
+    height: 12em;
+    background: radial-gradient(circle at center, #763CAC, #320F85);
+    border-radius: 50%;
+    filter: blur(70px); 
+}
+
+.inner-ellipse {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at center, #763CAC, #320F85);
+    border-radius: 50%;
+    filter: blur(40px); 
+}
+
+.avatar-container img {
+    z-index: 2;
+    position: absolute;
+    border-radius: 20px; 
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 1); 
+}
+
+/* arrow  */
+
+.arrow-container {
+    position: absolute;
+    top: -90px;
+    left: 330px;
+    transform: scale(0.5);
+}
+
+.arrow {
+    width: 80px;
+    transform: rotate(70deg);
+}
+
+.arrow .curve {
+	border: 1.7px solid #fff;
+	border-color: transparent transparent transparent #fff;
+	height: 360px;
+	width: 250px;
+	border-radius: 300px 0 0 200px;
+}
+
+.arrow .point {
+	position: absolute;
+	left: 40px;
+	top: 315px;
+}
+
+.arrow .point:before, .arrow .point:after {
+	border: 0.5px solid #9c9898;
+	height: 25px;
+	content: "";
+	position: absolute;
+}
+
+.arrow .point:before {
+	top: -11px;
+	left: -11px;
+	transform:rotate(-74deg);
+	-webkit-transform:rotate(-74deg);
+    -moz-transform:rotate(-74deg);
+    -ms-transform: rotate(-74deg);
+}
+
+.arrow .point:after {
+    top: -20px;
+	left: 5px;
+	transform:rotate(12deg);
+	-webkit-transform: rotate(12deg);
+    -moz-transform:rotate(12deg);
+    -ms-transform: rotate(12deg);
+}
+
+.greeting span, .brief-introduction span {
+    color: var(--special-font-color);
+}
+
+.greeting {
+    position: absolute;
+    top: 60px;
+    left: 440px;
+    color: #fff;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    min-width: 150px;
+
+}
+
+.brief-introduction {
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    color: #fff;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.brief-introduction p:first-child {
+    font-size: calc(var(--font-size) / 1.5);
+}
+
+.brief-introduction p:last-child {
+    font-size: calc(var(--font-size) / 1.7);
+}
+
+.introduction-des p:last-child {
+    max-width: 90%;
+}
+
+#gw-icon {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    border-radius: 100px;
+}
+
+/* skill */
+
+.skill-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.skill-content .heading {
+    font-size: 0.8em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.skill-content img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* project */
+.projects a {
+    color: var(--prject-font-color);
+    text-decoration: none;
+}
+
+.projects, .project-container {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    font-family: var(--project-font);
+}
+
+.project-container {
+    height: 50%;
+}
+
+.gradient {
+    display: inline-block;
+    position: absolute;
+    left: 55%;
+    transform: scale(1.78);
+}
+
+.gradient:nth-child(2) {
+    left: 500px;
+}
+
+.project-content {
+    position: absolute;
+    top: 80px;
+    color: var(--project-font-color);
+    z-index: 3;
+}
+
+.project-content .title {
+    color: var(--special-font-color);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.project-content .heading {
+    cursor: pointer;
+}
+
+.project-description {
+    margin-top: 30px;
+    padding: 25px;
+    width: 80%;
+    min-width: 60%;
+    font-size: 1em;
+    backdrop-filter: blur(100px);
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px; 
+}
+
+.img-container {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.preview-container, .project-preview {
+    border-radius: 20px;
+}
+
+.preview-container {
+    position: relative;
+    top: 50px;
+    left: 280px;
+    width: fit-content;
+    background-color: var(--project-background-color);
+    z-index: 2;
+}
+
+.project-preview {
+    transform: translate(40px, 40px);
+}
+
+.project-container.second {
+    text-align: right;
+    top: 200px;
+}
+
+.project-container.second .project-content {
+    left: 50%;
+    min-width: 70%;
+    max-width: 100%;
+}
+
+.project-container.second .project-description {
+    width: 100%;
+    text-align: left;
+}
+
+.project-container.second .img-container,
+.project-container.second .gradient,
+.project-container.second .preview-container {
+    left: 0;
+}
+
+.project-container.second .gradient {
+    top: -50px;
+    left: -100px;
+    transform: scale(1.3);
+}
+
+.project-container.second .preview-container {
+    transform: translate(40px, -40px);
+}
+
+.project-container.second .project-preview {
+    transform: translate(-40px, 40px);
+}
+
+.project-container.second .img-container {
+    top: 60px;
+}
+
+/* Contact */
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px ;
+}
+
+.info-container {
+    width: 100%;
+    font-size: cal(var(--font-size) / 10);
+}
