@@ -79,7 +79,7 @@ a {
 
 .main {
     width: 100%;
-    height: 315vh;
+    height: 350vh;
     background-color: var(--main-color);
 }
 
@@ -394,7 +394,7 @@ a {
 }
 
 .project-container.second .project-content {
-    left: 50%;
+    left: 40%;
     min-width: 70%;
     max-width: 100%;
 }
