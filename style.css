@@ -309,6 +309,10 @@ a {
 }
 
 /* project */
+.projects {
+    margin-top: 25vh;
+}
+
 .projects a {
     padding: 35px;
     padding-left: 0;
@@ -351,11 +355,6 @@ a {
     font-size: 1em;
 }
 
-/* .project-content .heading {
-    width: 30%;
-    cursor: pointer;
-} */
-
 .project-description {
     margin-top: 30px;
     padding: 25px;
@@ -393,7 +392,7 @@ a {
 
 .project-container.second {
     text-align: right;
-    top: 200px;
+    top: 100px;
 }
 
 .project-container.second a {
